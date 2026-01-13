@@ -54,7 +54,7 @@ class AppDeviceIntegrityPlugin: FlutterPlugin, MethodCallHandler, ActivityAware 
   }
 
   override fun onDetachedFromActivity() {
-    TODO("Not yet implemented")
+    activity = null
   }
 
   override fun onReattachedToActivityForConfigChanges(binding: ActivityPluginBinding) {
