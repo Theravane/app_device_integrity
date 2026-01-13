@@ -17,7 +17,7 @@ class AppDeviceIntegrityPlugin: FlutterPlugin, MethodCallHandler, ActivityAware 
 
   private lateinit var channel: MethodChannel
   private lateinit var context: Context
-  private lateinit var activity: Activity
+  private lateinit var activity: Activity?
 
   override fun onAttachedToEngine(flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
     channel = MethodChannel(flutterPluginBinding.binaryMessenger, "app_attestation")
